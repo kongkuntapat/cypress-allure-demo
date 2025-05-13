@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://<your-username>.github.io/<repo-name>",
+  "homepage": "https://kongkuntapat.github.io/cypress-allure-demo",
   "scripts": {
     "test": "npx cypress run",
     "allure:report": "allure generate allure-results --clean -o allure-report",
