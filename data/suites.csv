@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
 "","1481","loads Google","","Thu May 15 18:02:48 ICT 2025","passed","Thu May 15 18:02:49 ICT 2025","","🧪 Allure Test","",""
-"","870","❌ Login ล้มเหลว","","Thu May 15 18:31:42 ICT 2025","failed","Thu May 15 18:31:43 ICT 2025","","🧪 Login ด้วย fixture","",""
-"","3239","✅ Login สำเร็จ (ใช้ custom command)","","Thu May 15 18:31:39 ICT 2025","failed","Thu May 15 18:31:42 ICT 2025","","🧪 Login ด้วย fixture","",""
+"","827","❌ Login ล้มเหลว","","Thu May 15 18:32:57 ICT 2025","failed","Thu May 15 18:32:58 ICT 2025","","🧪 Login ด้วย fixture","",""
+"","3126","✅ Login สำเร็จ (ใช้ custom command)","","Thu May 15 18:32:54 ICT 2025","failed","Thu May 15 18:32:57 ICT 2025","","🧪 Login ด้วย fixture","",""
