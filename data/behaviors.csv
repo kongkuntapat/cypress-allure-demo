@@ -1,5 +1,5 @@
 "BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
 "0","","0","","124","0","","0"
-"0","Authentication","0","Login Page","1","0","User: เข้าระบบด้วยข้อมูลที่ผิด","0"
-"0","Authentication","0","Login Page","1","0","User: เข้าระบบด้วยข้อมูลที่ถูกต้อง","0"
 "0","Authentication","1","Login Page","0","0","Force fail to trigger screenshot","0"
+"0","Authentication","2","Login Page","0","0","","0"
+"0","Authentication","1","Login Page","0","0","Force fail to test screenshot attach","0"
