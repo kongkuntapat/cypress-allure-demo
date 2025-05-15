@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"811245c119317f9fbdb4f7ce4f63b1bd","name":"\uD83E\uDDEA Login Test","statistic":{"failed":3,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":3}}]}
+{"total":1,"items":[{"uid":"3c0bed6a6c7ca99b6911c32078863655","name":"\uD83E\uDDEA Mock API ด้วย cy.intercept()","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
