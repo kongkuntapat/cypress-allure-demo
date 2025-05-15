@@ -12,7 +12,24 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
-
 // Import commands.js using ES2015 syntax:
-import '@shelex/cypress-allure-plugin'
-import './commands'
+
+import '@shelex/cypress-allure-plugin';
+import './commands';
+
+Cypress.on('test:after:run', (test, runnable) => {
+  if (test.state === 'failed') {
+    const specName = Cypress.spec.name.replace(/.*[\/\\]/, '');
+    const screenshotFileName = `${runnable.parent} -- ${test.title} (failed).png`;
+    const screenshotPath = `cypress/screenshots/${specName}/${screenshotFileName}`;
+
+    // ✅ แนบ Screenshot แบบ base64 เข้า Allure Report
+    cy.task('readFileMaybe', screenshotPath, 'base64').then((imgData) => {
+      if (imgData) {
+        const buffer = Buffer.from(imgData, 'base64');
+        const allure = Cypress.Allure.reporter.getInterface();
+        allure.attachment('Failure Screenshot', buffer, 'image/png');
+      }
+    });
+  }
+});

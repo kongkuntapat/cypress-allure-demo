@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User List</title>
+  <style>
+    .user-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>รายชื่อผู้ใช้งาน</h1>
+  <div id="user-list"></div>
+
+  <script>
+    fetch("/api/users")
+      .then(res => res.json())
+      .then(users => {
+        const list = document.getElementById("user-list");
+        users.forEach(user => {
+          const card = document.createElement("div");
+          card.className = "user-card";
+          card.innerHTML = `<strong>${user.name}</strong><br>Email: ${user.email}`;
+          list.appendChild(card);
+        });
+      });
+  </script>
+</body>
+</html>
